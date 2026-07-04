@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c448a4a2-75e8-40d6-a68f-8e789b2fd12a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/FastAPIProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_main.http" afterDir="false" />
+    <list default="true" id="c448a4a2-75e8-40d6-a68f-8e789b2fd12a" name="Changes" comment="readme.me">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,29 +27,41 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "dancytron"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/dancytron/pycharm_test.git",
+    "accountId": "e474904d-6828-45fe-b7cd-93c2571c70c1"
+  }
+}]]></component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000000501308" />
-      <entry key="MS500" value="1.0282597636464947" />
-      <entry key="S2" value="4.184031460738318" />
-      <entry key="S5" value="13.297125301855148" />
-      <entry key="S10" value="23.483306795195386" />
-      <entry key="S30" value="37.15298972945403" />
-      <entry key="S60" value="43.27594019277997" />
-      <entry key="M2" value="62.718441380044396" />
-      <entry key="M5" value="147.63224659263443" />
-      <entry key="M10" value="231.90724545525725" />
-      <entry key="M15" value="274.4322526900655" />
-      <entry key="M30" value="327.6943768697677" />
-      <entry key="H1" value="359.33885577694895" />
-      <entry key="H2" value="376.63069055401354" />
-      <entry key="H4" value="385.67571112402305" />
-      <entry key="D1" value="393.42611949064553" />
-      <entry key="W1" value="394.77466838500516" />
+      <entry key="MS100" value="1.0000150487168045" />
+      <entry key="MS500" value="1.1085175284501303" />
+      <entry key="S2" value="1.573951206927501" />
+      <entry key="S5" value="1.8008478046460585" />
+      <entry key="S10" value="1.8949010027071513" />
+      <entry key="S30" value="1.9638047303751363" />
+      <entry key="S60" value="2.008358650593955" />
+      <entry key="M2" value="2.4157174811832727" />
+      <entry key="M5" value="12.894504456735568" />
+      <entry key="M10" value="62.67283233196289" />
+      <entry key="M15" value="114.10284634246672" />
+      <entry key="M30" value="212.31891033892535" />
+      <entry key="H1" value="291.5721018765558" />
+      <entry key="H2" value="342.1983761570905" />
+      <entry key="H4" value="370.85208681008834" />
+      <entry key="D1" value="396.62623157031175" />
+      <entry key="W1" value="401.2277248122707" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -80,23 +83,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9592641193730163" />
-      <entry key="MS500" value="1.0195859710623036" />
-      <entry key="S2" value="4.168483163071653" />
-      <entry key="S5" value="13.274894994908333" />
-      <entry key="S10" value="23.463040804923242" />
-      <entry key="S30" value="37.14208979569102" />
-      <entry key="S60" value="43.269592317594366" />
-      <entry key="M2" value="62.71399997222852" />
-      <entry key="M5" value="147.6282322519567" />
-      <entry key="M10" value="231.9040891145373" />
-      <entry key="M15" value="274.42974962843715" />
-      <entry key="M30" value="327.6928685946611" />
-      <entry key="H1" value="359.3380233335967" />
-      <entry key="H2" value="376.630252594412" />
-      <entry key="H4" value="385.6754864089546" />
-      <entry key="D1" value="393.42608121444283" />
-      <entry key="W1" value="394.77466289643877" />
+      <entry key="MS100" value="0.9266022005021551" />
+      <entry key="MS500" value="1.0920384474748221" />
+      <entry key="S2" value="1.568358697221452" />
+      <entry key="S5" value="1.7983254763060388" />
+      <entry key="S10" value="1.8935807372092697" />
+      <entry key="S30" value="1.9633501914530942" />
+      <entry key="S60" value="2.008124796379148" />
+      <entry key="M2" value="2.4155658043329593" />
+      <entry key="M5" value="12.894147320159101" />
+      <entry key="M10" value="62.671971083527694" />
+      <entry key="M15" value="114.10179881114706" />
+      <entry key="M30" value="212.31792903309258" />
+      <entry key="H1" value="291.57142423299666" />
+      <entry key="H2" value="342.19797710670264" />
+      <entry key="H4" value="370.85187015867393" />
+      <entry key="D1" value="396.62619288609005" />
+      <entry key="W1" value="401.22771922014886" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
@@ -122,7 +125,7 @@
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/live/boot-dev/Live-usb-storage/pycharm/projects/FastAPIProject/contacts.db",
+    "last_opened_file_path": "/live/boot-dev/Live-usb-storage/pycharm/projects/FastAPIProject",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -140,8 +143,9 @@
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/.venv/bin/python" />
+      <option name="SDK_NAME" value="Python 3.11 (FastAPIProject)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -167,8 +171,33 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1783199302999</updated>
-      <workItem from="1783199304102" duration="2593000" />
+      <workItem from="1783199304102" duration="3445000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1783201951132</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1783201951132</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1783202108733</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1783202108733</updated>
+    </task>
+    <task id="LOCAL-00003" summary="readme.me">
+      <option name="closed" value="true" />
+      <created>1783202366823</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1783202366823</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,5 +213,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <MESSAGE value="readme.me" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme.me" />
   </component>
 </project>
