@@ -1,0 +1,51 @@
+# Test the contact management API
+
+GET http://127.0.0.1:8000/
+Accept: application/json
+
+###
+
+POST http://127.0.0.1:8000/contacts
+Content-Type: application/json
+
+{
+  "first_name": "Taylor",
+  "middle_initial": "A",
+  "last_name": "Morgan",
+  "age": 31,
+  "date_of_birth": "1995-04-12",
+  "email": "taylor.morgan@example.com",
+  "favorite_color": "green",
+  "pronouns": "they/them"
+}
+
+###
+
+GET http://127.0.0.1:8000/contacts
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/contacts/search?q=green
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/contacts/1
+Accept: application/json
+
+###
+
+PUT http://127.0.0.1:8000/contacts/1
+Content-Type: application/json
+
+{
+  "favorite_color": "purple"
+}
+
+###
+
+DELETE http://127.0.0.1:8000/contacts/1
+Accept: application/json
+
+###
