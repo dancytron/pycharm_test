@@ -14,6 +14,23 @@ app.state.database_path = DEFAULT_DATABASE_PATH
 
 
 class InputInformation:
+    """Stores contact details entered through the CLI or API.
+
+    Inputs:
+        first_name: Contact's first name.
+        middle_initial: Contact's one-character middle initial.
+        last_name: Contact's last name.
+        age: Contact's age in years.
+        date_of_birth: Contact's date of birth in YYYY-MM-DD format.
+        email: Contact's email address.
+        favorite_color: Contact's favorite color.
+        pronouns: Contact's pronouns.
+
+    Outputs:
+        Provides contact fields through properties and returns a dictionary of
+        all stored contact details from to_dict().
+    """
+
     def __init__(
         self,
         first_name: str,
@@ -160,6 +177,23 @@ class InputInformation:
 
 
 class ContactCreate(BaseModel):
+    """Validates the request body used to create a contact.
+
+    Inputs:
+        first_name: Required contact first name.
+        middle_initial: Required one-character contact middle initial.
+        last_name: Required contact last name.
+        age: Required contact age, which must be zero or greater.
+        date_of_birth: Required contact date of birth in YYYY-MM-DD format.
+        email: Required contact email address.
+        favorite_color: Required contact favorite color.
+        pronouns: Required contact pronouns.
+
+    Outputs:
+        A validated Pydantic model whose fields are converted to a dictionary
+        before a new contact is saved.
+    """
+
     first_name: str
     middle_initial: str
     last_name: str
@@ -171,6 +205,23 @@ class ContactCreate(BaseModel):
 
 
 class ContactUpdate(BaseModel):
+    """Validates the request body used to update an existing contact.
+
+    Inputs:
+        first_name: Optional replacement contact first name.
+        middle_initial: Optional replacement one-character middle initial.
+        last_name: Optional replacement contact last name.
+        age: Optional replacement contact age, which must be zero or greater.
+        date_of_birth: Optional replacement date of birth in YYYY-MM-DD format.
+        email: Optional replacement contact email address.
+        favorite_color: Optional replacement contact favorite color.
+        pronouns: Optional replacement contact pronouns.
+
+    Outputs:
+        A validated Pydantic model containing only the provided update fields
+        when converted with exclude_unset=True.
+    """
+
     first_name: Optional[str] = None
     middle_initial: Optional[str] = None
     last_name: Optional[str] = None
@@ -646,7 +697,7 @@ def prompt_required_text(prompt: str) -> str:
 def prompt_middle_initial(prompt: str) -> str:
     while True:
         try:
-            middle_initial = prompt_required_text(prom4pt)
+            middle_initial = prompt_required_text(prompt)
             if len(middle_initial) != 1:
                 raise ValueError("Middle initial must be one character.")
             return middle_initial

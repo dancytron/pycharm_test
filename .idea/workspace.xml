@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c448a4a2-75e8-40d6-a68f-8e789b2fd12a" name="Changes" comment="readme.me">
-      <change beforePath="$PROJECT_DIR$/.idea/FastAPIProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/First AI test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="c448a4a2-75e8-40d6-a68f-8e789b2fd12a" name="Changes" comment="Fixed virtual environment and had Junie finish app">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contacts.db" beforeDir="false" afterPath="$PROJECT_DIR$/contacts.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="19" />
+    <option name="cachedIndexableFilesCount" value="20" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -51,62 +47,65 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.000000000447359" />
-      <entry key="S5" value="1.0014387644580403" />
-      <entry key="S10" value="1.243790258006554" />
-      <entry key="S30" value="9.065226415677245" />
-      <entry key="S60" value="24.290530391128673" />
-      <entry key="M2" value="54.29542235670075" />
-      <entry key="M5" value="110.54438932249377" />
-      <entry key="M10" value="166.5971753722123" />
-      <entry key="M15" value="216.8583845043984" />
-      <entry key="M30" value="328.41433481532073" />
-      <entry key="H1" value="434.89018742538" />
-      <entry key="H2" value="510.1824763490685" />
-      <entry key="H4" value="555.1863234450599" />
-      <entry key="D1" value="597.0950342578113" />
-      <entry key="W1" value="604.7167313696842" />
+      <entry key="MS100" value="1.1087279869179958" />
+      <entry key="MS500" value="2.316738999986336" />
+      <entry key="S2" value="9.0094435981668" />
+      <entry key="S5" value="23.92870782805981" />
+      <entry key="S10" value="41.086363202579335" />
+      <entry key="S30" value="64.776192373557" />
+      <entry key="S60" value="73.56075375966498" />
+      <entry key="M2" value="78.57002523485184" />
+      <entry key="M5" value="84.46367846799083" />
+      <entry key="M10" value="105.03535075058588" />
+      <entry key="M15" value="137.2048259434963" />
+      <entry key="M30" value="249.8452573840205" />
+      <entry key="H1" value="415.6049701366815" />
+      <entry key="H2" value="569.9327440543409" />
+      <entry key="H4" value="677.4770382830728" />
+      <entry key="D1" value="788.1578909099029" />
+      <entry key="W1" value="809.3912914800388" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="3.474320018084855E-88" />
-      <entry key="S5" value="1.3508915022582153E-35" />
-      <entry key="S10" value="5.0212367703736326E-18" />
-      <entry key="S30" value="2.713397026926723E-6" />
-      <entry key="S60" value="0.0024514360404388684" />
-      <entry key="M2" value="0.07957404264988939" />
-      <entry key="M5" value="0.684892639321614" />
-      <entry key="M10" value="1.426496365749085" />
-      <entry key="M15" value="1.8255834824329353" />
-      <entry key="M30" value="2.3389131513772767" />
-      <entry key="H1" value="2.648530768081229" />
-      <entry key="H2" value="2.818690405683674" />
-      <entry key="H4" value="2.907905999830671" />
-      <entry key="D1" value="2.984447129036088" />
-      <entry key="W1" value="2.997773115761707" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="2.644686989270509E-216" />
+      <entry key="S10" value="2.2217112028924014E-108" />
+      <entry key="S30" value="2.0676275628077977E-36" />
+      <entry key="S60" value="2.1399323826699404E-18" />
+      <entry key="M2" value="2.351046205087378E-9" />
+      <entry key="M5" value="6.665279958627358E-4" />
+      <entry key="M10" value="0.044500881923201625" />
+      <entry key="M15" value="0.18091184244797398" />
+      <entry key="M30" value="0.7362863434951697" />
+      <entry key="H1" value="1.4860086835568314" />
+      <entry key="H2" value="2.1113271848519304" />
+      <entry key="H4" value="2.5167173592948173" />
+      <entry key="D1" value="2.913441058937681" />
+      <entry key="W1" value="2.9874786484017726" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.005048253244677701" />
-      <entry key="MS500" value="0.3472387839412776" />
-      <entry key="S2" value="0.7676390457695503" />
-      <entry key="S5" value="0.9010643254345868" />
-      <entry key="S10" value="1.192098415784755" />
-      <entry key="S30" value="9.045792188608601" />
-      <entry key="S60" value="24.281207265851677" />
-      <entry key="M2" value="54.36575679123576" />
-      <entry key="M5" value="111.22001684268052" />
-      <entry key="M10" value="168.01581792308383" />
-      <entry key="M15" value="218.6773918295015" />
-      <entry key="M30" value="330.7488782289431" />
-      <entry key="H1" value="437.53611385416474" />
-      <entry key="H2" value="512.9997290768963" />
-      <entry key="H4" value="558.0934717179573" />
-      <entry key="D1" value="600.0793492020892" />
-      <entry key="W1" value="607.7144854504887" />
+      <entry key="MS100" value="1.0486624254085843" />
+      <entry key="MS500" value="2.286185377320231" />
+      <entry key="S2" value="8.97848048590361" />
+      <entry key="S5" value="23.892685456257738" />
+      <entry key="S10" value="41.053762310016275" />
+      <entry key="S30" value="64.7584641264107" />
+      <entry key="S60" value="73.55060956926552" />
+      <entry key="M2" value="78.56458776240979" />
+      <entry key="M5" value="84.46197222484206" />
+      <entry key="M10" value="105.07807635868039" />
+      <entry key="M15" value="137.3837904190417" />
+      <entry key="M30" value="250.57922649668674" />
+      <entry key="H1" value="417.0889179290272" />
+      <entry key="H2" value="572.0426514892363" />
+      <entry key="H4" value="679.9929159601153" />
+      <entry key="D1" value="791.0711703865077" />
+      <entry key="W1" value="812.3787464612406" />
     </decayedShown>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3,
@@ -125,6 +124,7 @@
     "Python.main.executor": "Run",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -138,7 +138,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "com.intellij.ml.llm.agents.skills.settings",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -151,6 +151,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="$PROJECT_DIR$/.venv/bin/python" />
+      <option name="SDK_NAME" value="Python 3.11 (FastAPIProject) (2)" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -161,6 +162,33 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in test_main.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="First AI test" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_main.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="FastAPI.FastAPIProject" />
+      <item itemvalue="Python tests.Python tests in test_main.py" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests in test_main.py" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -173,7 +201,10 @@
       <workItem from="1783202855383" duration="228000" />
       <workItem from="1783203223323" duration="44000" />
       <workItem from="1783203270661" duration="1353000" />
-      <workItem from="1783210857502" duration="1261000" />
+      <workItem from="1783210857502" duration="1849000" />
+      <workItem from="1783214421676" duration="361000" />
+      <workItem from="1783259286588" duration="183000" />
+      <workItem from="1783259532503" duration="3095000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -215,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1783204578987</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fixed virtual environment and had Junie finish app">
+      <option name="closed" value="true" />
+      <created>1783212269911</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1783212269911</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,13 +275,14 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="readme.me" />
     <MESSAGE value="change project name" />
-    <option name="LAST_COMMIT_MESSAGE" value="change project name" />
+    <MESSAGE value="Fixed virtual environment and had Junie finish app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed virtual environment and had Junie finish app" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/First_AI_test$FastAPIProject.coverage" NAME="FastAPIProject Coverage Results" MODIFIED="1783211184969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/First_AI_test$main.coverage" NAME="main Coverage Results" MODIFIED="1783211572172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/First_AI_test$FastAPIProject.coverage" NAME="FastAPIProject Coverage Results" MODIFIED="1783262260924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/First_AI_test$main.coverage" NAME="main Coverage Results" MODIFIED="1783262305508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FastAPIProject$main.coverage" NAME="main Coverage Results" MODIFIED="1783204530020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/First_AI_test$.coverage" NAME=" Coverage Results" MODIFIED="1783211079416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/First_AI_test$.coverage" NAME=" Coverage Results" MODIFIED="1783261947341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FastAPIProject$FastAPIProject.coverage" NAME="FastAPIProject Coverage Results" MODIFIED="1783204367564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
