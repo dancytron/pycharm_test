@@ -611,6 +611,255 @@ def delete_contact(contact_id: int) -> dict[str, str]:
     return {"message": "Contact deleted"}
 
 
+def display_contact(contact: dict[str, Any]) -> None:
+    print(
+        f"ID: {contact['id']} | "
+        f"{contact['first_name']} {contact['middle_initial']}. {contact['last_name']} | "
+        f"Age: {contact['age']} | "
+        f"DOB: {contact['date_of_birth']} | "
+        f"Email: {contact['email']} | "
+        f"Favorite color: {contact['favorite_color']} | "
+        f"Pronouns: {contact['pronouns']}"
+    )
+
+
+def display_contacts(contacts: list[dict[str, Any]]) -> None:
+    if not contacts:
+        print("No contacts found.")
+        return
+
+    for contact in contacts:
+        display_contact(contact)
+
+
+def prompt_required_text(prompt: str) -> str:
+    while True:
+        try:
+            value = input(prompt).strip()
+            if not value:
+                raise ValueError("This field is required.")
+            return value
+        except ValueError as exc:
+            print(f"Invalid input: {exc}")
+
+
+def prompt_middle_initial(prompt: str) -> str:
+    while True:
+        try:
+            middle_initial = prompt_required_text(prom4pt)
+            if len(middle_initial) != 1:
+                raise ValueError("Middle initial must be one character.")
+            return middle_initial
+        except ValueError as exc:
+            print(f"Invalid input: {exc}")
+
+
+def prompt_age(prompt: str) -> int:
+    while True:
+        try:
+            age = int(input(prompt).strip())
+            if age < 0:
+                raise ValueError("Age must be zero or greater.")
+            return age
+        except ValueError as exc:
+            print(f"Invalid input: {exc}")
+
+
+def prompt_date_of_birth(prompt: str) -> str:
+    while True:
+        try:
+            date_of_birth = prompt_required_text(prompt)
+            date.fromisoformat(date_of_birth)
+            return date_of_birth
+        except ValueError:
+            print("Invalid input: Date of birth must use YYYY-MM-DD format.")
+
+
+def prompt_email(prompt: str) -> str:
+    while True:
+        try:
+            email = prompt_required_text(prompt)
+            if "@" not in email or "." not in email.split("@")[-1]:
+                raise ValueError("Email must be valid.")
+            return email
+        except ValueError as exc:
+            print(f"Invalid input: {exc}")
+
+
+def prompt_contact_id(prompt: str = "Contact ID: ") -> int:
+    while True:
+        try:
+            contact_id = int(input(prompt).strip())
+            if contact_id <= 0:
+                raise ValueError("Contact ID must be greater than zero.")
+            return contact_id
+        except ValueError as exc:
+            print(f"Invalid input: {exc}")
+
+
+def prompt_contact_information() -> InputInformation:
+    return InputInformation(
+        first_name=prompt_required_text("First name: "),
+        middle_initial=prompt_middle_initial("Middle initial: "),
+        last_name=prompt_required_text("Last name: "),
+        age=prompt_age("Age: "),
+        date_of_birth=prompt_date_of_birth("Date of birth (YYYY-MM-DD): "),
+        email=prompt_email("Email: "),
+        favorite_color=prompt_required_text("Favorite color: "),
+        pronouns=prompt_required_text("Pronouns: "),
+    )
+
+
+def prompt_optional_text(prompt: str) -> Optional[str]:
+    value = input(prompt).strip()
+    if not value:
+        return None
+    return value
+
+
+def prompt_contact_changes() -> dict[str, Any]:
+    print("Press Enter to keep the current value for any field.")
+    changes: dict[str, Any] = {}
+
+    first_name = prompt_optional_text("First name: ")
+    if first_name is not None:
+        changes["first_name"] = first_name
+
+    while True:
+        try:
+            middle_initial = prompt_optional_text("Middle initial: ")
+            if middle_initial is None:
+                break
+            if len(middle_initial) != 1:
+                raise ValueError("Middle initial must be one character.")
+            changes["middle_initial"] = middle_initial
+            break
+        except ValueError as exc:
+            print(f"Invalid input: {exc}")
+
+    last_name = prompt_optional_text("Last name: ")
+    if last_name is not None:
+        changes["last_name"] = last_name
+
+    while True:
+        try:
+            age_text = prompt_optional_text("Age: ")
+            if age_text is None:
+                break
+            age = int(age_text)
+            if age < 0:
+                raise ValueError("Age must be zero or greater.")
+            changes["age"] = age
+            break
+        except ValueError as exc:
+            print(f"Invalid input: {exc}")
+
+    while True:
+        try:
+            date_of_birth = prompt_optional_text("Date of birth (YYYY-MM-DD): ")
+            if date_of_birth is None:
+                break
+            date.fromisoformat(date_of_birth)
+            changes["date_of_birth"] = date_of_birth
+            break
+        except ValueError:
+            print("Invalid input: Date of birth must use YYYY-MM-DD format.")
+
+    while True:
+        try:
+            email = prompt_optional_text("Email: ")
+            if email is None:
+                break
+            if "@" not in email or "." not in email.split("@")[-1]:
+                raise ValueError("Email must be valid.")
+            changes["email"] = email
+            break
+        except ValueError as exc:
+            print(f"Invalid input: {exc}")
+
+    favorite_color = prompt_optional_text("Favorite color: ")
+    if favorite_color is not None:
+        changes["favorite_color"] = favorite_color
+
+    pronouns = prompt_optional_text("Pronouns: ")
+    if pronouns is not None:
+        changes["pronouns"] = pronouns
+
+    return changes
+
+
+def add_contact_from_input() -> None:
+    try:
+        contact = create_contact(prompt_contact_information())
+        print("Contact added successfully.")
+        display_contact(contact)
+    except HTTPException as exc:
+        print(f"Unable to add contact: {exc.detail}")
+
+
+def remove_contact_from_input() -> None:
+    try:
+        contact_id = prompt_contact_id()
+        delete_contact(contact_id)
+        print("Contact removed successfully.")
+    except HTTPException as exc:
+        print(f"Unable to remove contact: {exc.detail}")
+
+
+def edit_contact_from_input() -> None:
+    try:
+        contact_id = prompt_contact_id()
+        display_contact(print_contact(contact_id))
+        updated_contact = update_contact(contact_id, prompt_contact_changes())
+        print("Contact updated successfully.")
+        display_contact(updated_contact)
+    except HTTPException as exc:
+        print(f"Unable to edit contact: {exc.detail}")
+
+
+def search_contacts_from_input() -> None:
+    query = prompt_required_text("Search contacts: ")
+    display_contacts(search_contacts(query))
+
+
+def list_contacts_from_input() -> None:
+    display_contacts(list_contacts())
+
+
+def run_contact_interface() -> None:
+    init_database()
+    populate_sample_data()
+
+    while True:
+        print("\nContact Management Menu")
+        print("1. Add contact")
+        print("2. Remove contact")
+        print("3. Edit contact")
+        print("4. Search contacts")
+        print("5. List contacts")
+        print("6. Exit")
+
+        try:
+            choice = input("Choose an option (1-6): ").strip()
+            if choice == "1":
+                add_contact_from_input()
+            elif choice == "2":
+                remove_contact_from_input()
+            elif choice == "3":
+                edit_contact_from_input()
+            elif choice == "4":
+                search_contacts_from_input()
+            elif choice == "5":
+                list_contacts_from_input()
+            elif choice == "6":
+                print("Goodbye!")
+                break
+            else:
+                raise ValueError("Please choose a number from 1 to 6.")
+        except ValueError as exc:
+            print(f"Invalid input: {exc}")
+
+
 @app.on_event("startup")
 def startup() -> None:
     init_database()
@@ -653,3 +902,7 @@ async def modify_contact(contact_id: int, contact: ContactUpdate) -> dict[str, A
 @app.delete("/contacts/{contact_id}")
 async def remove_contact(contact_id: int) -> dict[str, str]:
     return delete_contact(contact_id)
+
+
+if __name__ == "__main__":
+    run_contact_interface()

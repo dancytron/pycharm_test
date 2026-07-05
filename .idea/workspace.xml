@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c448a4a2-75e8-40d6-a68f-8e789b2fd12a" name="Changes" comment="readme.me">
+      <change beforePath="$PROJECT_DIR$/.idea/FastAPIProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/First AI test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,7 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="8" />
+    <option name="cachedIndexableFilesCount" value="19" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -27,85 +33,85 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "dancytron"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;dancytron&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/dancytron/pycharm_test.git",
-    "accountId": "e474904d-6828-45fe-b7cd-93c2571c70c1"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/dancytron/pycharm_test.git&quot;,
+    &quot;accountId&quot;: &quot;e474904d-6828-45fe-b7cd-93c2571c70c1&quot;
   }
-}]]></component>
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000150487168045" />
-      <entry key="MS500" value="1.1085175284501303" />
-      <entry key="S2" value="1.573951206927501" />
-      <entry key="S5" value="1.8008478046460585" />
-      <entry key="S10" value="1.8949010027071513" />
-      <entry key="S30" value="1.9638047303751363" />
-      <entry key="S60" value="2.008358650593955" />
-      <entry key="M2" value="2.4157174811832727" />
-      <entry key="M5" value="12.894504456735568" />
-      <entry key="M10" value="62.67283233196289" />
-      <entry key="M15" value="114.10284634246672" />
-      <entry key="M30" value="212.31891033892535" />
-      <entry key="H1" value="291.5721018765558" />
-      <entry key="H2" value="342.1983761570905" />
-      <entry key="H4" value="370.85208681008834" />
-      <entry key="D1" value="396.62623157031175" />
-      <entry key="W1" value="401.2277248122707" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.000000000447359" />
+      <entry key="S5" value="1.0014387644580403" />
+      <entry key="S10" value="1.243790258006554" />
+      <entry key="S30" value="9.065226415677245" />
+      <entry key="S60" value="24.290530391128673" />
+      <entry key="M2" value="54.29542235670075" />
+      <entry key="M5" value="110.54438932249377" />
+      <entry key="M10" value="166.5971753722123" />
+      <entry key="M15" value="216.8583845043984" />
+      <entry key="M30" value="328.41433481532073" />
+      <entry key="H1" value="434.89018742538" />
+      <entry key="H2" value="510.1824763490685" />
+      <entry key="H4" value="555.1863234450599" />
+      <entry key="D1" value="597.0950342578113" />
+      <entry key="W1" value="604.7167313696842" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="0.0" />
-      <entry key="S60" value="0.0" />
-      <entry key="M2" value="0.0" />
-      <entry key="M5" value="0.0" />
-      <entry key="M10" value="0.0" />
-      <entry key="M15" value="0.0" />
-      <entry key="M30" value="0.0" />
-      <entry key="H1" value="0.0" />
-      <entry key="H2" value="0.0" />
-      <entry key="H4" value="0.0" />
-      <entry key="D1" value="0.0" />
-      <entry key="W1" value="0.0" />
+      <entry key="S2" value="3.474320018084855E-88" />
+      <entry key="S5" value="1.3508915022582153E-35" />
+      <entry key="S10" value="5.0212367703736326E-18" />
+      <entry key="S30" value="2.713397026926723E-6" />
+      <entry key="S60" value="0.0024514360404388684" />
+      <entry key="M2" value="0.07957404264988939" />
+      <entry key="M5" value="0.684892639321614" />
+      <entry key="M10" value="1.426496365749085" />
+      <entry key="M15" value="1.8255834824329353" />
+      <entry key="M30" value="2.3389131513772767" />
+      <entry key="H1" value="2.648530768081229" />
+      <entry key="H2" value="2.818690405683674" />
+      <entry key="H4" value="2.907905999830671" />
+      <entry key="D1" value="2.984447129036088" />
+      <entry key="W1" value="2.997773115761707" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9266022005021551" />
-      <entry key="MS500" value="1.0920384474748221" />
-      <entry key="S2" value="1.568358697221452" />
-      <entry key="S5" value="1.7983254763060388" />
-      <entry key="S10" value="1.8935807372092697" />
-      <entry key="S30" value="1.9633501914530942" />
-      <entry key="S60" value="2.008124796379148" />
-      <entry key="M2" value="2.4155658043329593" />
-      <entry key="M5" value="12.894147320159101" />
-      <entry key="M10" value="62.671971083527694" />
-      <entry key="M15" value="114.10179881114706" />
-      <entry key="M30" value="212.31792903309258" />
-      <entry key="H1" value="291.57142423299666" />
-      <entry key="H2" value="342.19797710670264" />
-      <entry key="H4" value="370.85187015867393" />
-      <entry key="D1" value="396.62619288609005" />
-      <entry key="W1" value="401.22771922014886" />
+      <entry key="MS100" value="0.005048253244677701" />
+      <entry key="MS500" value="0.3472387839412776" />
+      <entry key="S2" value="0.7676390457695503" />
+      <entry key="S5" value="0.9010643254345868" />
+      <entry key="S10" value="1.192098415784755" />
+      <entry key="S30" value="9.045792188608601" />
+      <entry key="S60" value="24.281207265851677" />
+      <entry key="M2" value="54.36575679123576" />
+      <entry key="M5" value="111.22001684268052" />
+      <entry key="M10" value="168.01581792308383" />
+      <entry key="M15" value="218.6773918295015" />
+      <entry key="M30" value="330.7488782289431" />
+      <entry key="H1" value="437.53611385416474" />
+      <entry key="H2" value="512.9997290768963" />
+      <entry key="H4" value="558.0934717179573" />
+      <entry key="D1" value="600.0793492020892" />
+      <entry key="W1" value="607.7144854504887" />
     </decayedShown>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3G3TYmkvbXjB9JjGMjnNI9kpgAW" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -115,6 +121,7 @@
   "keyToString": {
     "FastAPI.FastAPIProject.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests in test_main.py.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -125,13 +132,13 @@
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/live/boot-dev/Live-usb-storage/pycharm/projects/FastAPIProject",
+    "last_opened_file_path": "/home/pycharm/Live-usb-storage/projects",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "SQL Dialects",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -139,12 +146,11 @@
   <component name="RunManager">
     <configuration name="FastAPIProject" type="Python.FastAPI">
       <option name="file" value="$PROJECT_DIR$/main.py" />
-      <module name="FastAPIProject" />
+      <module name="First AI test" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="$PROJECT_DIR$/.venv/bin/python" />
-      <option name="SDK_NAME" value="Python 3.11 (FastAPIProject)" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -156,14 +162,6 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-PY-261.26222.68" />
-        <option value="bundled-python-sdk-50341a9f1f9c-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.26222.68" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c448a4a2-75e8-40d6-a68f-8e789b2fd12a" name="Changes" comment="" />
@@ -171,7 +169,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1783199302999</updated>
-      <workItem from="1783199304102" duration="3445000" />
+      <workItem from="1783199304102" duration="3547000" />
+      <workItem from="1783202855383" duration="228000" />
+      <workItem from="1783203223323" duration="44000" />
+      <workItem from="1783203270661" duration="1353000" />
+      <workItem from="1783210857502" duration="1261000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -197,7 +199,23 @@
       <option name="project" value="LOCAL" />
       <updated>1783202366823</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="readme.me">
+      <option name="closed" value="true" />
+      <created>1783202769428</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1783202769428</updated>
+    </task>
+    <task id="LOCAL-00005" summary="readme.me">
+      <option name="closed" value="true" />
+      <created>1783204578987</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1783204578987</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +235,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="readme.me" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme.me" />
+    <MESSAGE value="change project name" />
+    <option name="LAST_COMMIT_MESSAGE" value="change project name" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/First_AI_test$FastAPIProject.coverage" NAME="FastAPIProject Coverage Results" MODIFIED="1783211184969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/First_AI_test$main.coverage" NAME="main Coverage Results" MODIFIED="1783211572172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FastAPIProject$main.coverage" NAME="main Coverage Results" MODIFIED="1783204530020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/First_AI_test$.coverage" NAME=" Coverage Results" MODIFIED="1783211079416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FastAPIProject$FastAPIProject.coverage" NAME="FastAPIProject Coverage Results" MODIFIED="1783204367564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

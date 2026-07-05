@@ -1,8 +1,19 @@
 import tempfile
 import unittest
+from io import StringIO
+from unittest.mock import patch
 from fastapi.testclient import TestClient
 
-from main import InputInformation, app, init_database, list_contacts, populate_sample_data
+from main import (
+    InputInformation,
+    add_contact_from_input,
+    app,
+    init_database,
+    list_contacts,
+    populate_sample_data,
+    remove_contact_from_input,
+    search_contacts_from_input,
+)
 
 
 def sample_contact(**overrides):
@@ -126,6 +137,45 @@ class ContactApplicationTests(unittest.TestCase):
 
         self.assertEqual(response.status_code, 404)
         self.assertEqual(response.json()["detail"], "Contact not found")
+
+    def test_cli_add_contact_validates_input_and_creates_contact(self):
+        user_input = [
+            "Taylor",
+            "AB",
+            "A",
+            "Morgan",
+            "invalid age",
+            "31",
+            "not-a-date",
+            "1995-04-12",
+            "invalid-email",
+            "taylor.morgan@example.com",
+            "green",
+            "they/them",
+        ]
+
+        with patch("builtins.input", side_effect=user_input), patch("sys.stdout", new_callable=StringIO) as output:
+            add_contact_from_input()
+
+        contacts = list_contacts()
+        self.assertEqual(len(contacts), 1)
+        self.assertEqual(contacts[0]["email"], "taylor.morgan@example.com")
+        self.assertIn("Invalid input: Middle initial must be one character.", output.getvalue())
+        self.assertIn("Contact added successfully.", output.getvalue())
+
+    def test_cli_search_and_remove_contact(self):
+        self.client.post("/contacts", json=sample_contact())
+
+        with patch("builtins.input", return_value="green"), patch("sys.stdout", new_callable=StringIO) as output:
+            search_contacts_from_input()
+
+        self.assertIn("taylor.morgan@example.com", output.getvalue())
+
+        with patch("builtins.input", return_value="1"), patch("sys.stdout", new_callable=StringIO) as output:
+            remove_contact_from_input()
+
+        self.assertEqual(list_contacts(), [])
+        self.assertIn("Contact removed successfully.", output.getvalue())
 
 
 if __name__ == "__main__":
